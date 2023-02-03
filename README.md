@@ -32,9 +32,6 @@ Politico Website with 2020 US Election Results by State | Statistical Atlas Site
 
 Politico, shown in the left hand figure, is the site where the voting data was scraped from. Statistical Atlas was used to collect all the demographic data for each state as well as general information about each state, such as their population. To collect the data, the general process was to import BeautifulSoup, a Python Web Scraping library, and then request the HTML content from the necessary site. From here, we found the relevant information on a given site and then produced the data as csv files. The example of how to do this with the Politico site can be seen below, while the Statistical Atlas case is given in the Python notebook.
 
-<details>
-<summary> Python Code</summary>
-
 ```Python3
 import requests
 import csv
@@ -57,13 +54,8 @@ with open("election.csv", "w", newline="") as f:
     writer.writerows(results)
 ```
 
-</details>
-<br/>
-
 Web scraping the Politico site was relatively simple as the information on the page was limited and so we could effectively web scrape everything in one go. For the Statistical Atlas site however, some additional work needed to occur. The major issue came about from the data storing information on the page as zip codes as opposed to state by state information. This mean that we needed to aggregate information across the zip codes after assigning each zip code to one of the 50 states. We did this with the help of a library called uszipcode which had a preexisting database that we could access to assign values. The table below shows a small extract of the data that was collected as well as some of the key variables that are analysed later.
 
-<details>
-<summary> Table</summary>
     
 |     state      | Trump Votes | Trump Percent | Biden Votes | Biden Percent | Median Household Income | All-age Poverty Rate | 2020 pop. |
 |:--------------:|:-----------:|:-------------:|:-----------:|:-------------:|:-----------------------:|:--------------------:|:---------:|
@@ -119,9 +111,6 @@ Web scraping the Politico site was relatively simple as the information on the p
 | Wisconsin      |   1610184   |      48.9     |     1630866 |          49.6 |                   64901 |                 10   |   5893718 |
 | Wyoming        |   193559    |      70.4     |       73491 |          26.7 |                   67284 |                  9.2 |    576851 |
 
-    
-</details>
-<br/>
 
 Alongside the data shown in this table, state-by-state breakdowns of ethnicity, educational attainment and median income for each state. Several other variables were initially explored though from many previous studies it has been shown these variables are the most often discussed when considering voter habits.
 
@@ -130,9 +119,6 @@ Alongside the data shown in this table, state-by-state breakdowns of ethnicity, 
 Exploratory data analysis (EDA) is a crucial step in analysing our dataset as it helps us gain insight into the structure of our data. The goal of EDA is to summarise the characteristics of the data. In this coursework, we will perform EDA on the 2020 US Election data that we have web scraped. This will involve summarising the main characteristics of the data and creating various plots to visualise the relationships between variables.
 
 An initial starting point is to consider basic summary statistics as shown in the table below.
-
-<details>
-<summary> Table</summary>
     
 | Index   | Votes for Trump | Percentage Vote Trump | Votes for Biden | Percentage Vote Biden |   Median Household Income |   All-age Poverty Rate |   Percentage of Hispanic or Latino |   Percentage of White |   Percentage of Black or African American |   Percentage of American Indian and Alaska Native |   Percentage of Asian |   Percentage of Native Hawaiian and Other Pacific Islander | Percentage of Other Race |   Percentage of Population of Two or More Race | 2020 pop. |
 |:--------|-----------------:|----------------:|-----------------:|----------------:|--------------------------:|-----------------------:|-----------------------------------:|----------------------:|------------------------------------------:|--------------------------------------------------:|----------------------:|-----------------------------------------------------------:|--------------------------------:|-----------------------------------------------:|-----------------:|
@@ -144,8 +130,6 @@ An initial starting point is to consider basic summary statistics as shown in th
 | 75% | 1789540 | 57.9 | 2375910 | 57.1 | 76588.5 | 13.15 | 12.6 | 79.6 | 13.55 | 0.9 | 5.15 | 0.1 | 0.5 | 3.8 | 7428390 |
 | Maximum | 5982190 | 70.4 | 11082300 | 93 | 91957 | 18.7 | 44.3 | 91.7 | 38.9 | 13.5 | 39.6 | 9.1 | 1.2 | 17.3 | 39538200 |
 
-</details>
-<br/>
 
 These summary statistics provide us with a general overview of the central tendency, variability, and distribution of the data across all 50 states. However, it is possible that the data may vary greatly between states, which can impact the election results. For example, some states may have a higher median household income, while others may have a higher poverty rate. Additionally, some states may have a higher percentage of certain races, such as a higher percentage of Hispanic or Latino, compared to others. Understanding the spread of these variables across states can provide insight into the diversity of the US population and the challenges faced by different communities. It is particularly interesting, that across the states Trump on average had a greater percentage of a given states votes than Biden. However, it makes more sense how Biden won when you consider that minimum percentages for Trump are much lower, 5.4%, compared to Biden, 26.7%. Moreover, the spread of median household income is clearly negatively correlated with the poverty rate within a given state. To further explore this variation, we create box plots and histograms for the variables and groups. These can be seen below.
 
@@ -202,4 +186,10 @@ In addition, the voting outcome might not be the best indicator of people’s po
 #### Work Distribution: 
 + Nicolas Michel: Took care of most of the exploratory analysis and the findings, the creation of the plots and explained how each had an impact on our research. Main task was to analyse the data and draw conclusions based on those findings. 
 + Xiran Fang: Collected the data of race and income from U.S. Census Bereau APIs, instructed the final project's webpage construction and collaborated with Nicolas on final report. Main tasks were to asist Nicolas and to manage the teamwork.
-+ Suosi He:
++ Suosi He: Collected data, proofread final report, polished the webpage using Typora and HTML.
+
+| **NAMES** | Data  Viz. | Stats | Comp.  Sci. | Comms. | Domain  Knowledge |
+| :-------: | :--------: | :---: | :---------: | :----: | :---------------: |
+|  Nicolas  |    50%     |  40%  |     35%     |  30%   |        35%        |
+|  Xinran   |    25%     |  30%  |     35%     |  40%   |        35%        |
+|   Suosi   |    25%     |  30%  |     30%     |  30%   |        30%        |

@@ -1,8 +1,5 @@
-# DS105
-
-## US 2020 Elections: An Analysis of US Voting Habits Using Python
-
-Group Members: Nicolas Michel, Xiran Fang, and Suosi He
+# DS105 Final Project 
+# US 2020 Elections: An Analysis of US Voting Habits Using Python
 
 ## Motivation
 
@@ -145,7 +142,7 @@ The correlation plot suggests that voters with higher incomes tended to vote for
 Lets first generate a plot using the shape file and data so we can easily visualise the voting habits of the election. This can be seen in the figure below.
 
 <div  align="center"> 
-<img src="./figs/Stateheatmap.png" width = "550" height = "300" alt="Figure 5: State Heat Map \label{fig5}" align=center />
+<img src="./figs/Stateheatmap.png" width = "450" height = "250" alt="Figure 5: State Heat Map \label{fig5}" align=center />
 </div>
 <br/>
 The plot here only shows the percentage that a given state voted for Biden. However, the implication here is relatively clear. States with a low percentage of Biden votes will clearly have a high percentage of Trump votes as in any given state the votes for the combined candidates is between 95.9% and 99.1%. It is unsurprising from this map, that states that are generally known for more conservative attitudes voted Republican and the more liberal states seemed to vote for Democratic candidates. States on the East and West coast generally voted in favour of Biden while the central and midwestern states more commonly voted in favour of Trump. It is now useful to substrata this data down further to see if other factors have similar mappings.
@@ -175,3 +172,8 @@ Given more time, it would have been useful to build plots that looked at educati
 
 In conclusion, our group has primarily attempted to investigate the factors that influenced voters’ choices in the 2020 U.S. presidential election. We chose income level and race as the target variables and state as the unit, extracting the data of median household income and poverty rate as the former one’s indicators and the data of the three most populous races: White, Hispanic or Latino and Black or African American as the latter one’s indicator. As the analysis displays, the variations in the poverty rate and the Hispanic/Latino population have the most matched patterns with the states’ voting outcome among the paralleled indicators: the higher percentage of Hispanic/Latino population and the lower the poverty rate in a state, the more likely it was to vote for the eventual winner, Biden of the Democratic Party.
 
+## Appendix
+### Work Distribution: 
++ Nicolas Michel:
++ Xiran Fang:
++ Suosi He

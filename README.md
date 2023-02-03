@@ -27,7 +27,7 @@ Politico Website with 2020 US Election Results by State | Statistical Atlas Site
 :-------------------------: | :-------------------------:
 ![Figure 1 \label{fig1}](./figs/datasite1.png) | ![Figure 2 \label{fig2}](./figs/datasite2.png)
 
-Politico shown in the left hand figure is the site where the voting data was scraped from. Statistical Atlas was used to collect all the demographic data for each state as well as general information about each state like their population. To collect the data, the general process was to import BeautifulSoup, a Python Web Scraping library, and then request the HTML content from the necessary site. From here, we found the relevant information on a given site and then produced the data as csv files. The example of how to do this with the Politico site can be seen below, while the Statistical Atlas case is given in the Python notebook.
+Politico, shown in the left hand figure, is the site where the voting data was scraped from. Statistical Atlas was used to collect all the demographic data for each state as well as general information about each state, such as their population. To collect the data, the general process was to import BeautifulSoup, a Python Web Scraping library, and then request the HTML content from the necessary site. From here, we found the relevant information on a given site and then produced the data as csv files. The example of how to do this with the Politico site can be seen below, while the Statistical Atlas case is given in the Python notebook.
 
 ```Python3
 import requests
@@ -113,7 +113,7 @@ Alongside the data shown in this table, state-by-state breakdowns of ethnicity, 
 
 Exploratory data analysis (EDA) is a crucial step in analysing our dataset as it helps us gain insight into the structure of our data. The goal of EDA is to summarise the characteristics of the data. In this coursework, we will perform EDA on the 2020 US Election data that we have web scraped. This will involve summarising the main characteristics of the data and creating various plots to visualise the relationships between variables.
 
-An initial starting point, is to consider basic summary statistics as shown in the table below.
+An initial starting point is to consider basic summary statistics as shown in the table below.
 
 | Index   | Votes for Trump | Percentage Vote Trump | Votes for Biden | Percentage Vote Biden |   Median Household Income |   All-age Poverty Rate |   Percentage of Hispanic or Latino |   Percentage of White |   Percentage of Black or African American |   Percentage of American Indian and Alaska Native |   Percentage of Asian |   Percentage of Native Hawaiian and Other Pacific Islander | Percentage of Other Race |   Percentage of Population of Two or More Race | 2020 pop. |
 |:--------|-----------------:|----------------:|-----------------:|----------------:|--------------------------:|-----------------------:|-----------------------------------:|----------------------:|------------------------------------------:|--------------------------------------------------:|----------------------:|-----------------------------------------------------------:|--------------------------------:|-----------------------------------------------:|-----------------:|

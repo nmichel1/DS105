@@ -53,7 +53,8 @@ with open("election.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerows(results)
 ```
-    </p>
+    
+</p>
 </details>
 <br/>
 

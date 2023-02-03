@@ -6,7 +6,7 @@ DS105 Final Project
 
 ### Motivation
 
-The 2020 U.S. presidential election is undoubtedly a memorable one in history, with the highest national turnout rate since 1900 and the candidates with extreme contrasts. The two most promising candidates, Biden for the Democrats and Trump for the Republicans, stood on the completely reverse side of the political spectrum: left-wing liberalism vs. right-wing populism. Thus, it became a poll with no intermediate choices for over 10 million voters, who were far more ethnically and gender diverse than that presidential election a century ago.
+>The 2020 U.S. presidential election is undoubtedly a memorable one in history, with the highest national turnout rate since 1900 and the candidates with extreme contrasts. The two most promising candidates, Biden for the Democrats and Trump for the Republicans, stood on the completely reverse side of the political spectrum: left-wing liberalism vs. right-wing populism. Thus, it became a poll with no intermediate choices for over 10 million voters, who were far more ethnically and gender diverse than that presidential election a century ago.
 
 <div  align="center"> 
 <img src="./figs/bbc_2020_election_img.png" width = "550" height = "300" alt="Feature Image" align=center />
@@ -24,7 +24,8 @@ Once the data has been collected and analysed, we could use it to make predictio
 <img src="./figs/shapefile.png" width = "550" height = "300" alt="Figure 0: Shape File USA \label{fig0}" align=center />
 </div>
 <br/>
-There are 50 states in the USA. Each state has an associated number of votes as well as the demographics of the voters and the percentage of that state which voted in the election. The data was collected from two main sources. The figure below shows the two websites that data was collected from.
+
+>There are 50 states in the USA. Each state has an associated number of votes as well as the demographics of the voters and the percentage of that state which voted in the election. The data was collected from two main sources. The figure below shows the two websites that data was collected from.
 
 Politico Website with 2020 US Election Results by State | Statistical Atlas Site with Demographics by State
 :-------------------------: | :-------------------------:
@@ -123,13 +124,13 @@ Web scraping the Politico site was relatively simple as the information on the p
 </details>
 <br/>
 
-Alongside the data shown in this table, state-by-state breakdowns of ethnicity, educational attainment and median income for each state. Several other variables were initially explored though from many previous studies it has been shown these variables are the most often discussed when considering voter habits.
+>Alongside the data shown in this table, state-by-state breakdowns of ethnicity, educational attainment and median income for each state. Several other variables were initially explored though from many previous studies it has been shown these variables are the most often discussed when considering voter habits.
 
 ### Exploratory Data Analysis
 
 Exploratory data analysis (EDA) is a crucial step in analysing our dataset as it helps us gain insight into the structure of our data. The goal of EDA is to summarise the characteristics of the data. In this coursework, we will perform EDA on the 2020 US Election data that we have web scraped. This will involve summarising the main characteristics of the data and creating various plots to visualise the relationships between variables.
 
-An initial starting point is to consider basic summary statistics as shown in the table below.
+>An initial starting point is to consider basic summary statistics as shown in the table below.
 
 <details>
 <summary> Table</summary>
@@ -157,16 +158,18 @@ The box plots show some insights. Firstly, there are certain states with particu
 <img src="./figs/Correlationplot.png" width = "550" height = "380" alt="Figure 4: Correlation Plot \label{fig4}" align=center />
 </div>
 <br/>
+
 The correlation plot suggests that voters with higher incomes tended to vote for the Republican candidate, Trump. Race and ethnicity also seems to have some impact on voting habits. Black and Hispanic voters have seemed more likely to vote for Biden, while White voters were more likely to vote with Trump than they were with Biden. It would be interesting to be able to analyse the spatial aspect of the data and see if there is any consistencies between states that voted for Trump.
 
 ### Findings
 
-Lets first generate a plot using the shape file and data so we can easily visualise the voting habits of the election. This can be seen in the figure below.
+>Lets first generate a plot using the shape file and data so we can easily visualise the voting habits of the election. This can be seen in the figure below.
 
 <div  align="center"> 
 <img src="./figs/Stateheatmap.png" width = "450" height = "250" alt="Figure 5: State Heat Map \label{fig5}" align=center />
 </div>
 <br/>
+
 The plot here only shows the percentage that a given state voted for Biden. However, the implication here is relatively clear. States with a low percentage of Biden votes will clearly have a high percentage of Trump votes as in any given state the votes for the combined candidates is between 95.9% and 99.1%. It is unsurprising from this map, that states that are generally known for more conservative attitudes voted Republican and the more liberal states seemed to vote for Democratic candidates. States on the East and West coast generally voted in favour of Biden while the central and midwestern states more commonly voted in favour of Trump. It is now useful to substrata this data down further to see if other factors have similar mappings.
 
 <div  align="center"> 
@@ -178,9 +181,9 @@ In the figure above, it can be seen the poverty rate, that is the percentage of 
 <div  align="center"> 
 <img src="./figs/medianincome.png" width = "550" height = "400" alt="Figure 6b: Median Household Income Heat map \label{fig6b}" align=center />
 </div>
-This next figure shows more about the Median Household income. When compared to the voting habits of the general population, it is clear that this relates more so than the poverty rate. If you rescale both of these plots to be between 0 and 1, it is clear that State by State those with low median incomes have high percentage votes for Trump, while the higher median States, were more likely to vote for Biden. While not evident on these plots, this is somewhat surprising when we consider external data known about voters. Republicans tend to be the wealthiest and poorest of the electoral college while Democrats make up more of the middle class.
+>This next figure shows more about the Median Household income. When compared to the voting habits of the general population, it is clear that this relates more so than the poverty rate. If you rescale both of these plots to be between 0 and 1, it is clear that State by State those with low median incomes have high percentage votes for Trump, while the higher median States, were more likely to vote for Biden. While not evident on these plots, this is somewhat surprising when we consider external data known about voters. Republicans tend to be the wealthiest and poorest of the electoral college while Democrats make up more of the middle class.
 
-In the initial spatial maps, we analysed the Poverty rate and the median household income. We now want to further break down our analysis by also looking at how race also affects the voting habits of the US 2020 election.
+>In the initial spatial maps, we analysed the Poverty rate and the median household income. We now want to further break down our analysis by also looking at how race also affects the voting habits of the US 2020 election.
 
 | White | Hispanic | African American |
 |:-----:|:--------:|:----------------:|
@@ -188,7 +191,7 @@ In the initial spatial maps, we analysed the Poverty rate and the median househo
 
 It is clear from these plots, which make up the three biggest ethnic groups in the US, that the White voters pattern is not immediately obvious. However, by looking at the Hispanic map, it is clear there is a similar mapping between Biden votes and states with higher percentages of Hispanic residents. Finally, in the case of African American voters, due to the low percentage in many states it is difficult to analyse. By transforming the data, it can be seen that this would show similar results to the Hispanic map. 
 
-Given more time, it would have been useful to build plots that looked at educational attainment though it can be seen from data in general, that those who had higher levels of education, regardless of state, tended to be more likely to vote for Biden.
+>Given more time, it would have been useful to build plots that looked at educational attainment though it can be seen from data in general, that those who had higher levels of education, regardless of state, tended to be more likely to vote for Biden.
 
 ### Conclusion
 
@@ -201,5 +204,12 @@ In addition, the voting outcome might not be the best indicator of people’s po
 ### Appendix
 #### Work Distribution: 
 + Nicolas Michel: Took care of most of the exploratory analysis and the findings, the creation of the plots and explained how each had an impact on our research. Main task was to analyse the data and draw conclusions based on those findings. 
-+ Xiran Fang: Collected the data of race and income from U.S. Census Bereau APIs, instructed the final project's webpage construction and collaborated with Nicolas on final report. Main tasks were to asist Nicolas and to manage the teamwork.
++ Xiran Fang:
 + Suosi He:
+
+| **NAMES** | Data  Viz. | Stats | Comp.  Sci. | Comms. | Domain  Knowledge |
+| :-------: | :--------: | :---: | :---------: | :----: | :---------------: |
+|  Nicolas  |    50%     |  40%  |     35%     |  30%   |        35%        |
+|  Xinran   |    25%     |  30%  |     35%     |  40%   |        35%        |
+|   Suosi   |    25%     |  30%  |     30%     |  30%   |        30%        |
+

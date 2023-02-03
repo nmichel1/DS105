@@ -32,8 +32,8 @@ Politico Website with 2020 US Election Results by State | Statistical Atlas Site
 
 Politico, shown in the left hand figure, is the site where the voting data was scraped from. Statistical Atlas was used to collect all the demographic data for each state as well as general information about each state, such as their population. To collect the data, the general process was to import BeautifulSoup, a Python Web Scraping library, and then request the HTML content from the necessary site. From here, we found the relevant information on a given site and then produced the data as csv files. The example of how to do this with the Politico site can be seen below, while the Statistical Atlas case is given in the Python notebook.
 
-<details><summary> Python Code</summary>
-<p>
+<details>
+<summary> Python Code</summary>
 
 ```Python3
 import requests
@@ -56,15 +56,14 @@ with open("election.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerows(results)
 ```
-    
-</p>
+
 </details>
 <br/>
 
 Web scraping the Politico site was relatively simple as the information on the page was limited and so we could effectively web scrape everything in one go. For the Statistical Atlas site however, some additional work needed to occur. The major issue came about from the data storing information on the page as zip codes as opposed to state by state information. This mean that we needed to aggregate information across the zip codes after assigning each zip code to one of the 50 states. We did this with the help of a library called uszipcode which had a preexisting database that we could access to assign values. The table below shows a small extract of the data that was collected as well as some of the key variables that are analysed later.
 
-<details><summary> Table</summary>
-<p>
+<details>
+<summary> Table</summary>
     
 |     state      | Trump Votes | Trump Percent | Biden Votes | Biden Percent | Median Household Income | All-age Poverty Rate | 2020 pop. |
 |:--------------:|:-----------:|:-------------:|:-----------:|:-------------:|:-----------------------:|:--------------------:|:---------:|
@@ -119,8 +118,8 @@ Web scraping the Politico site was relatively simple as the information on the p
 | West Virginia  |   545382    |      68.6     |      235984 |          29.7 |                   49202 |                 15.8 |   1793716 |
 | Wisconsin      |   1610184   |      48.9     |     1630866 |          49.6 |                   64901 |                 10   |   5893718 |
 | Wyoming        |   193559    |      70.4     |       73491 |          26.7 |                   67284 |                  9.2 |    576851 |
+
     
-</p>
 </details>
 <br/>
 
@@ -132,8 +131,8 @@ Exploratory data analysis (EDA) is a crucial step in analysing our dataset as it
 
 An initial starting point is to consider basic summary statistics as shown in the table below.
 
-<details><summary> Table</summary>
-<p>
+<details>
+<summary> Table</summary>
     
 | Index   | Votes for Trump | Percentage Vote Trump | Votes for Biden | Percentage Vote Biden |   Median Household Income |   All-age Poverty Rate |   Percentage of Hispanic or Latino |   Percentage of White |   Percentage of Black or African American |   Percentage of American Indian and Alaska Native |   Percentage of Asian |   Percentage of Native Hawaiian and Other Pacific Islander | Percentage of Other Race |   Percentage of Population of Two or More Race | 2020 pop. |
 |:--------|-----------------:|----------------:|-----------------:|----------------:|--------------------------:|-----------------------:|-----------------------------------:|----------------------:|------------------------------------------:|--------------------------------------------------:|----------------------:|-----------------------------------------------------------:|--------------------------------:|-----------------------------------------------:|-----------------:|
@@ -145,7 +144,6 @@ An initial starting point is to consider basic summary statistics as shown in th
 | 75% | 1789540 | 57.9 | 2375910 | 57.1 | 76588.5 | 13.15 | 12.6 | 79.6 | 13.55 | 0.9 | 5.15 | 0.1 | 0.5 | 3.8 | 7428390 |
 | Maximum | 5982190 | 70.4 | 11082300 | 93 | 91957 | 18.7 | 44.3 | 91.7 | 38.9 | 13.5 | 39.6 | 9.1 | 1.2 | 17.3 | 39538200 |
 
-</p>
 </details>
 <br/>
 

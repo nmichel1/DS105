@@ -112,7 +112,8 @@ Web scraping the Politico site was relatively simple as the information on the p
     
 </p>
 </details>
-    
+<br/>
+
 Alongside the data shown in this table, state-by-state breakdowns of ethnicity, educational attainment and median income for each state. Several other variables were initially explored though from many previous studies it has been shown these variables are the most often discussed when considering voter habits.
 
 ## Exploratory Data Analysis
@@ -136,6 +137,7 @@ An initial starting point is to consider basic summary statistics as shown in th
 
     </p>
 </details>
+<br/>
 
 These summary statistics provide us with a general overview of the central tendency, variability, and distribution of the data across all 50 states. However, it is possible that the data may vary greatly between states, which can impact the election results. For example, some states may have a higher median household income, while others may have a higher poverty rate. Additionally, some states may have a higher percentage of certain races, such as a higher percentage of Hispanic or Latino, compared to others. Understanding the spread of these variables across states can provide insight into the diversity of the US population and the challenges faced by different communities. It is particularly interesting, that across the states Trump on average had a greater percentage of a given states votes than Biden. However, it makes more sense how Biden won when you consider that minimum percentages for Trump are much lower, 5.4%, compared to Biden, 26.7%. Moreover, the spread of median household income is clearly negatively correlated with the poverty rate within a given state. To further explore this variation, we create box plots and histograms for the variables and groups. These can be seen below.
 

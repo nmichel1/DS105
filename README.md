@@ -1,4 +1,4 @@
-
+# DS105 Final Project 
 # US 2020 Elections: An Analysis of US Voting Habits Using Python
 
 ## Motivation
@@ -151,7 +151,7 @@ The plot here only shows the percentage that a given state voted for Biden. Howe
 <img src="./figs/povertyrate.png" width = "550" height = "400" alt="Figure 6a: Poverty Rate Heat Map \label{fig6a}" align=center />
 </div>
 
-In the figure above, it can be seen the poverty rate, that is the percentage of people living below the poverty line, varies between approximately 7 and 19 percent. Here, it can be seen that Mississippi had the highest rate of poverty while New Hampshire had the lowest. If we compare this map to our previous Biden Percentage plot, it can be seen that particularly for extremely high rates of poverty this appear to be states that more strongly supported Trump, while States with low rates preferred Biden. However, the states with the more average rates of Poverty, between the 11-15 percent, did not have as clear a pattern.
+In the figure above, it can be seen the poverty rate, that is the percentage of people living below the poverty line, varies between approximately 7 and 19 percent. Here, we can see that Mississippi had the highest rate of poverty while New Hampshire had the lowest. If we compare this map to our previous Biden Percentage plot, we notice that particularly for extremely high rates of poverty this appear to be states that more strongly supported Trump, while States with low rates preferred Biden. However, the states with the more average rates of Poverty, between the 11-15 percent, did not have as clear a pattern.
 
 <div  align="center"> 
 <img src="./figs/medianincome.png" width = "550" height = "400" alt="Figure 6b: Median Household Income Heat map \label{fig6b}" align=center />

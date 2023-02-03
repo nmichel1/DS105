@@ -181,7 +181,8 @@ In the figure above, it can be seen the poverty rate, that is the percentage of 
 <div  align="center"> 
 <img src="./figs/medianincome.png" width = "550" height = "400" alt="Figure 6b: Median Household Income Heat map \label{fig6b}" align=center />
 </div>
->This next figure shows more about the Median Household income. When compared to the voting habits of the general population, it is clear that this relates more so than the poverty rate. If you rescale both of these plots to be between 0 and 1, it is clear that State by State those with low median incomes have high percentage votes for Trump, while the higher median States, were more likely to vote for Biden. While not evident on these plots, this is somewhat surprising when we consider external data known about voters. Republicans tend to be the wealthiest and poorest of the electoral college while Democrats make up more of the middle class.
+
+This next figure shows more about the Median Household income. When compared to the voting habits of the general population, it is clear that this relates more so than the poverty rate. If you rescale both of these plots to be between 0 and 1, it is clear that State by State those with low median incomes have high percentage votes for Trump, while the higher median States, were more likely to vote for Biden. While not evident on these plots, this is somewhat surprising when we consider external data known about voters. Republicans tend to be the wealthiest and poorest of the electoral college while Democrats make up more of the middle class.
 
 >In the initial spatial maps, we analysed the Poverty rate and the median household income. We now want to further break down our analysis by also looking at how race also affects the voting habits of the US 2020 election.
 
@@ -204,8 +205,8 @@ In addition, the voting outcome might not be the best indicator of people’s po
 ### Appendix
 #### Work Distribution: 
 + Nicolas Michel: Took care of most of the exploratory analysis and the findings, the creation of the plots and explained how each had an impact on our research. Main task was to analyse the data and draw conclusions based on those findings. 
-+ Xiran Fang:
-+ Suosi He:
++ Xiran Fang: Collected the data of race and income from U.S. Census Bereau APIs, instructed the final project's webpage construction and collaborated with Nicolas on final report. Main tasks were to asist Nicolas and to manage the teamwork.
++ Suosi He: Collected data, proofread final report, polished the report webpage using Typora and HTML. 
 
 | **NAMES** | Data  Viz. | Stats | Comp.  Sci. | Comms. | Domain  Knowledge |
 | :-------: | :--------: | :---: | :---------: | :----: | :---------------: |

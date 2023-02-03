@@ -1,5 +1,3 @@
-<br/>
-
 # US 2020 Elections: An Analysis of US Voting Habits Using Python
 
 ## Motivation

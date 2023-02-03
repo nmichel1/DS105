@@ -174,6 +174,6 @@ In conclusion, our group has primarily attempted to investigate the factors that
 
 ## Appendix
 ### Work Distribution: 
-+ Nicolas Michel:
++ Nicolas Michel: Nicolas took care of most of the exploratory analysis and the findings. I took care of the creation of the plots and explained how each had an impact on our research. 
 + Xiran Fang:
-+ Suosi He:
++ Suosi He

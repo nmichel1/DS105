@@ -1,16 +1,17 @@
-
 # DS105
 
 ## US 2020 Elections: An Analysis of US Voting Habits Using Python
 
-Group Members: Nicolas Michel, Xiran Fang and Suosi He
+Group Members: Nicolas Michel, Xiran Fang, and Suosi He
 
 ## Motivation
 
 The 2020 U.S. presidential election is undoubtedly a memorable one in history, with the highest national turnout rate since 1900 and the candidates with extreme contrasts. The two most promising candidates, Biden for the Democrats and Trump for the Republicans, stood on the completely reverse side of the political spectrum: left-wing liberalism vs. right-wing populism. Thus, it became a poll with no intermediate choices for over 10 million voters, who were far more ethnically and gender diverse than that presidential election a century ago.
 
-![Feature Image](./figs/bbc_2020_election_img.png)
-
+<div  align="center"> 
+<img src="./figs/bbc_2020_election_img.png" width = "550" height = "300" alt="Feature Image" align=center />
+</div>
+<br/>
 Not only did voters' diversity increase, but the availability of their information also increased over time. A variety of research and data regarding this election was generated across a wide variety of platforms and sites. Here, by integrating multiple data sets the US election results can be viewed by state, demographics or a wide variety of other variables. Analysing this data provides a unique opportunity to gain insights into the attitudes and opinions of the American public, as well as the factors that influenced the outcome of the election. For instance, the U.S census bureau has started to digitalize and publicize its periodic data since the new millennium. This allows the public to access the latest census data on ethnicity, income levels, etc. Since our group want to test the hypothesis that people would be uniformly influenced in their political choices by their identities and economic conditions, the 2020 U.S presidential election would be a desirable case to study: if the hypothesis is true, then people under similar condition will likely to vote the same candidate between two polarized choices. In addition, the analysis of data can also tell us the exact preference of people with different traits.
 
 ## Data Collection
@@ -19,8 +20,10 @@ Web scraping the data gave us hands-on experience in collecting and cleaning dat
 
 Once the data has been collected and analysed, we could use it to make predictions for the 2024 US Election. This coursework provides a valuable opportunity to apply data analysis and web scraping skills to a real-world example and gain insights into a major political event. The figure below shows the state by state breakdown and shape file that will be used to fit the data.
 
-![Figure 0: Shape File USA \label{fig0}](./figs/shapefile.png)
-
+<div  align="center"> 
+<img src="./figs/shapefile.png" width = "550" height = "300" alt="Figure 0: Shape File USA \label{fig0}" align=center />
+</div>
+<br/>
 There are 50 states in the USA. Each state has an associated number of votes as well as the demographics of the voters and the percentage of that state which voted in the election. The data was collected from two main sources. The figure below shows the two websites that data was collected from.
 
 Politico Website with 2020 US Election Results by State | Statistical Atlas Site with Demographics by State
@@ -131,24 +134,31 @@ These summary statistics provide us with a general overview of the central tende
 
 The box plots show some insights. Firstly, there are certain states with particularly large or extreme numbers of votes for either Biden or Trump. On close inspection, it is unsurprising that certain states like Oklahoma and West Virginia where the votes for Trump where very high were these states. It is then also unsurprising that particularly large states that are known for being liberal, like California, are the anomalous results for the Biden Votes. From here, it is also worth looking at the correlation plot given in the figure below.
 
-![Figure 4: Correlation Plot \label{fig4}](./figs/Correlationplot.png)
-
+<div  align="center"> 
+<img src="./figs/Correlationplot.png" width = "550" height = "380" alt="Figure 4: Correlation Plot \label{fig4}" align=center />
+</div>
+<br/>
 The correlation plot suggests that voters with higher incomes tended to vote for the Republican candidate, Trump. Race and ethnicity also seems to have some impact on voting habits. Black and Hispanic voters have seemed more likely to vote for Biden, while White voters were more likely to vote with Trump than they were with Biden. It would be interesting to be able to analyse the spatial aspect of the data and see if there is any consistencies between states that voted for Trump.
 
 ## Findings
 
 Lets first generate a plot using the shape file and data so we can easily visualise the voting habits of the election. This can be seen in the figure below.
 
-![Figure 5: State Heat Map \label{fig5}](./figs/Stateheatmap.png)
-
+<div  align="center"> 
+<img src="./figs/Stateheatmap.png" width = "550" height = "300" alt="Figure 5: State Heat Map \label{fig5}" align=center />
+</div>
+<br/>
 The plot here only shows the percentage that a given state voted for Biden. However, the implication here is relatively clear. States with a low percentage of Biden votes will clearly have a high percentage of Trump votes as in any given state the votes for the combined candidates is between 95.9% and 99.1%. It is unsurprising from this map, that states that are generally known for more conservative attitudes voted Republican and the more liberal states seemed to vote for Democratic candidates. States on the East and West coast generally voted in favour of Biden while the central and midwestern states more commonly voted in favour of Trump. It is now useful to substrata this data down further to see if other factors have similar mappings.
 
-![Figure 6a: Poverty Rate Heat Map \label{fig6a}](./figs/povertyrate.png)
+<div  align="center"> 
+<img src="./figs/povertyrate.png" width = "550" height = "400" alt="Figure 6a: Poverty Rate Heat Map \label{fig6a}" align=center />
+</div>
 
 In the figure above, it can be seen the poverty rate, that is the percentage of people living below the poverty line, varies between approximately 7 and 19 percent. Here, it can be seen that Mississippi had the highest rate of poverty while New Hampshire had the lowest. If we compare this map to our previous Biden Percentage plot, it can be seen that particularly for extremely high rates of poverty this appear to be states that more strongly supported Trump, while States with low rates preferred Biden. However, the states with the more average rates of Poverty, between the 11-15 percent, did not have as clear a pattern.
 
-![Figure 6b: Median Household Income Heat map \label{fig6b}](./figs/medianincome.png)
-
+<div  align="center"> 
+<img src="./figs/medianincome.png" width = "550" height = "400" alt="Figure 6b: Median Household Income Heat map \label{fig6b}" align=center />
+</div>
 This next figure shows more about the Median Household income. When compared to the voting habits of the general population, it is clear that this relates more so than the poverty rate. If you rescale both of these plots to be between 0 and 1, it is clear that State by State those with low median incomes have high percentage votes for Trump, while the higher median States, were more likely to vote for Biden. While not evident on these plots, this is somewhat surprising when we consider external data known about voters. Republicans tend to be the wealthiest and poorest of the electoral college while Democrats make up more of the middle class.
 
 In the initial spatial maps, we analysed the Poverty rate and the median household income. We now want to further break down our analysis by also looking at how race also affects the voting habits of the US 2020 election.

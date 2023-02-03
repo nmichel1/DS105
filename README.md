@@ -20,6 +20,8 @@ Web scraping the data gave us hands-on experience in collecting and cleaning dat
 
 Once the data has been collected and analysed, we could use it to make predictions for the 2024 US Election. This coursework provides a valuable opportunity to apply data analysis and web scraping skills to a real-world example and gain insights into a major political event. The figure below shows the state by state breakdown and shape file that will be used to fit the data.
 
+We first tried using the U.S Census Bureau APIs to obtain the data of the population by state. Through visiting Poverty Statistics and Decennial Census, we obtained the 2020 data of each state’s race populations and the two important indicators of people’s income level, median household income and poverty rate. However, these official datasets didn’t include the voting information we need, so we turned to more alternative sources.
+
 <div  align="center"> 
 <img src="./figs/shapefile.png" width = "550" height = "300" alt="Figure 0: Shape File USA \label{fig0}" align=center />
 </div>

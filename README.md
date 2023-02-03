@@ -201,12 +201,5 @@ In addition, the voting outcome might not be the best indicator of people’s po
 ### Appendix
 #### Work Distribution: 
 + Nicolas Michel: Took care of most of the exploratory analysis and the findings, the creation of the plots and explained how each had an impact on our research. Main task was to analyse the data and draw conclusions based on those findings. 
-+ Xiran Fang:
++ Xiran Fang: Collected the data of race and income from U.S. Census Bereau APIs, instructed the final project's webpage construction and collaborated with Nicolas on final report. Main tasks were to asist Nicolas and to manage the teamwork.
 + Suosi He:
-
-| **NAMES** | Data  Viz. | Stats | Comp.  Sci. | Comms. | Domain  Knowledge |
-| :-------: | :--------: | :---: | :---------: | :----: | :---------------: |
-|  Nicolas  |    50%     |  40%  |     35%     |  30%   |        35%        |
-|  Xinran   |    25%     |  30%  |     35%     |  40%   |        35%        |
-|   Suosi   |    25%     |  30%  |     30%     |  30%   |        30%        |
-

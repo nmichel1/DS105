@@ -164,3 +164,7 @@ Given more time, it would have been useful to build plots that looked at educati
 
 In conclusion, our group has primarily attempted to investigate the factors that influenced voters’ choices in the 2020 U.S. presidential election. We chose income level and race as the target variables and state as the unit, extracting the data of median household income and poverty rate as the former one’s indicators and the data of the three most populous races: White, Hispanic or Latino and Black or African American as the latter one’s indicator. As the analysis displays, the variations in the poverty rate and the Hispanic/Latino population have the most matched patterns with the states’ voting outcome among the paralleled indicators: the higher percentage of Hispanic/Latino population and the lower the poverty rate in a state, the more likely it was to vote for the eventual winner, Biden of the Democratic Party.
 
+margin-top:100px;
+margin-bottom:100px;
+margin-right:50px;
+margin-left:50px;

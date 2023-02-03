@@ -1,7 +1,10 @@
+<h1 align="center">
+DS105 Final Project
+</h1>
 
-# US 2020 Elections: An Analysis of US Voting Habits Using Python
+## US 2020 Elections: An Analysis of US Voting Habits Using Python
 
-## Motivation
+### Motivation
 
 The 2020 U.S. presidential election is undoubtedly a memorable one in history, with the highest national turnout rate since 1900 and the candidates with extreme contrasts. The two most promising candidates, Biden for the Democrats and Trump for the Republicans, stood on the completely reverse side of the political spectrum: left-wing liberalism vs. right-wing populism. Thus, it became a poll with no intermediate choices for over 10 million voters, who were far more ethnically and gender diverse than that presidential election a century ago.
 
@@ -11,7 +14,7 @@ The 2020 U.S. presidential election is undoubtedly a memorable one in history, w
 <br/>
 Not only did voters' diversity increase, but the availability of their information also increased over time. A variety of research and data regarding this election was generated across a wide variety of platforms and sites. Here, by integrating multiple data sets the US election results can be viewed by state, demographics or a wide variety of other variables. Analysing this data provides a unique opportunity to gain insights into the attitudes and opinions of the American public, as well as the factors that influenced the outcome of the election. For instance, the U.S census bureau has started to digitalize and publicize its periodic data since the new millennium. This allows the public to access the latest census data on ethnicity, income levels, etc. Since our group want to test the hypothesis that people would be uniformly influenced in their political choices by their identities and economic conditions, the 2020 U.S presidential election would be a desirable case to study: if the hypothesis is true, then people under similar condition will likely to vote the same candidate between two polarized choices. In addition, the analysis of data can also tell us the exact preference of people with different traits.
 
-## Data Collection
+### Data Collection
 
 Web scraping the data gave us hands-on experience in collecting and cleaning data, which is an essential skill in data analysis. These factors made the 2020 US Election an ideal choice for our coursework as we had to collect data from multiple sources. This coursework aims to analyse the 2020 US Election data by web scraping various sources and exploring various factors and variables that could have influenced the election outcome. The data collected could include demographic information, voting patterns, and opinion polls.
 
@@ -123,7 +126,7 @@ Web scraping the Politico site was relatively simple as the information on the p
 
 Alongside the data shown in this table, state-by-state breakdowns of ethnicity, educational attainment and median income for each state. Several other variables were initially explored though from many previous studies it has been shown these variables are the most often discussed when considering voter habits.
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 
 Exploratory data analysis (EDA) is a crucial step in analysing our dataset as it helps us gain insight into the structure of our data. The goal of EDA is to summarise the characteristics of the data. In this coursework, we will perform EDA on the 2020 US Election data that we have web scraped. This will involve summarising the main characteristics of the data and creating various plots to visualise the relationships between variables.
 
@@ -142,7 +145,7 @@ An initial starting point is to consider basic summary statistics as shown in th
 | 75% | 1789540 | 57.9 | 2375910 | 57.1 | 76588.5 | 13.15 | 12.6 | 79.6 | 13.55 | 0.9 | 5.15 | 0.1 | 0.5 | 3.8 | 7428390 |
 | Maximum | 5982190 | 70.4 | 11082300 | 93 | 91957 | 18.7 | 44.3 | 91.7 | 38.9 | 13.5 | 39.6 | 9.1 | 1.2 | 17.3 | 39538200 |
 
-    </p>
+</p>
 </details>
 <br/>
 
@@ -158,7 +161,7 @@ The box plots show some insights. Firstly, there are certain states with particu
 <br/>
 The correlation plot suggests that voters with higher incomes tended to vote for the Republican candidate, Trump. Race and ethnicity also seems to have some impact on voting habits. Black and Hispanic voters have seemed more likely to vote for Biden, while White voters were more likely to vote with Trump than they were with Biden. It would be interesting to be able to analyse the spatial aspect of the data and see if there is any consistencies between states that voted for Trump.
 
-## Findings
+### Findings
 
 Lets first generate a plot using the shape file and data so we can easily visualise the voting habits of the election. This can be seen in the figure below.
 
@@ -189,14 +192,14 @@ It is clear from these plots, which make up the three biggest ethnic groups in t
 
 Given more time, it would have been useful to build plots that looked at educational attainment though it can be seen from data in general, that those who had higher levels of education, regardless of state, tended to be more likely to vote for Biden.
 
-## Conclusion
+### Conclusion
 
 In conclusion, our group has primarily attempted to investigate the factors that influenced voters’ choices in the 2020 U.S. presidential election. We chose income level and race as the target variables and state as the unit, extracting the data of median household income and poverty rate as the former one’s indicators and the data of the three most populous races: White, Hispanic or Latino and Black or African American as the latter one’s indicator. As the analysis displays, the variations in the poverty rate and the Hispanic/Latino population have the most matched patterns with the states’ voting outcome among the paralleled indicators: the higher percentage of Hispanic/Latino population and the lower the poverty rate in a state, the more likely it was to vote for the eventual winner, Biden of the Democratic Party.
 
 Certainly, our investigation has its limitations and drawbacks, and there are methodological improvements that can be applied to its design. The state might not be the most appropriate unit for delineating the population, since inside the states there are multiple electoral districts where the population and living conditions differ drastically, but all of them are ultimately represented by a final choice tallied at the state level. The variation in median household income at the state level doesn’t much consistent with the variation in the candidate choices in our findings, but the correlation might be more obvious if we change the unit from state to electoral district, especially when districts are divided between urban and rural areas. Furthermore, the division according to electoral states can facilitate the investigation of other variables’ influence on voting choices, for instance, researching on the population’s average degree of education. Like the median household income, this variable’s rural-urban might be even greater than its state-to-state difference.
 
-## Appendix
-### Work Distribution: 
-+ Nicolas Michel: Nicolas took care of most of the exploratory analysis and the findings. I took care of the creation of the plots and explained how each had an impact on our research. 
+### Appendix
+#### Work Distribution: 
++ Nicolas Michel: Took care of most of the exploratory analysis and the findings, the creation of the plots and explained how each had an impact on our research. 
 + Xiran Fang:
 + Suosi He:

@@ -1,3 +1,4 @@
+# DS105 Final Project 
 # US 2020 Elections: An Analysis of US Voting Habits Using Python
 
 ## Motivation
@@ -150,7 +151,7 @@ The plot here only shows the percentage that a given state voted for Biden. Howe
 <img src="./figs/povertyrate.png" width = "550" height = "400" alt="Figure 6a: Poverty Rate Heat Map \label{fig6a}" align=center />
 </div>
 
-In the figure above, it can be seen the poverty rate, that is the percentage of people living below the poverty line, varies between approximately 7 and 19 percent. Here, we can see that Mississippi had the highest rate of poverty while New Hampshire had the lowest. If we compare this map to our previous Biden Percentage plot, we notice that particularly for extremely high rates of poverty this appear to be states that more strongly supported Trump, while States with low rates preferred Biden. However, the states with the more average rates of Poverty, between the 11-15 percent, did not have as clear a pattern.
+In the figure above, it can be seen the poverty rate, that is the percentage of people living below the poverty line, varies between approximately 7 and 19 percent. Here, it can be seen that Mississippi had the highest rate of poverty while New Hampshire had the lowest. If we compare this map to our previous Biden Percentage plot, it can be seen that particularly for extremely high rates of poverty this appear to be states that more strongly supported Trump, while States with low rates preferred Biden. However, the states with the more average rates of Poverty, between the 11-15 percent, did not have as clear a pattern.
 
 <div  align="center"> 
 <img src="./figs/medianincome.png" width = "550" height = "400" alt="Figure 6b: Median Household Income Heat map \label{fig6b}" align=center />
@@ -170,6 +171,8 @@ Given more time, it would have been useful to build plots that looked at educati
 ## Conclusion
 
 In conclusion, our group has primarily attempted to investigate the factors that influenced voters’ choices in the 2020 U.S. presidential election. We chose income level and race as the target variables and state as the unit, extracting the data of median household income and poverty rate as the former one’s indicators and the data of the three most populous races: White, Hispanic or Latino and Black or African American as the latter one’s indicator. As the analysis displays, the variations in the poverty rate and the Hispanic/Latino population have the most matched patterns with the states’ voting outcome among the paralleled indicators: the higher percentage of Hispanic/Latino population and the lower the poverty rate in a state, the more likely it was to vote for the eventual winner, Biden of the Democratic Party.
+
+Certainly, our investigation has its limitations and drawbacks, and there are methodological improvements that can be applied to its design. The state might not be the most appropriate unit for delineating the population, since inside the states there are multiple electoral districts where the population and living conditions differ drastically, but all of them are ultimately represented by a final choice tallied at the state level. The variation in median household income at the state level doesn’t much consistent with the variation in the candidate choices in our findings, but the correlation might be more obvious if we change the unit from state to electoral district, especially when districts are divided between urban and rural areas. Furthermore, the division according to electoral states can facilitate the investigation of other variables’ influence on voting choices, for instance, researching on the population’s average degree of education. Like the median household income, this variable’s rural-urban might be even greater than its state-to-state difference.
 
 ## Appendix
 ### Work Distribution: 

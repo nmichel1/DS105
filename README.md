@@ -29,6 +29,9 @@ Politico Website with 2020 US Election Results by State | Statistical Atlas Site
 
 Politico, shown in the left hand figure, is the site where the voting data was scraped from. Statistical Atlas was used to collect all the demographic data for each state as well as general information about each state, such as their population. To collect the data, the general process was to import BeautifulSoup, a Python Web Scraping library, and then request the HTML content from the necessary site. From here, we found the relevant information on a given site and then produced the data as csv files. The example of how to do this with the Politico site can be seen below, while the Statistical Atlas case is given in the Python notebook.
 
+<details><summary> Python Code</summary>
+<p>
+
 ```Python3
 import requests
 import csv
@@ -50,6 +53,9 @@ with open("election.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerows(results)
 ```
+    </p>
+</details>
+<br/>
 
 Web scraping the Politico site was relatively simple as the information on the page was limited and so we could effectively web scrape everything in one go. For the Statistical Atlas site however, some additional work needed to occur. The major issue came about from the data storing information on the page as zip codes as opposed to state by state information. This mean that we needed to aggregate information across the zip codes after assigning each zip code to one of the 50 states. We did this with the help of a library called uszipcode which had a preexisting database that we could access to assign values. The table below shows a small extract of the data that was collected as well as some of the key variables that are analysed later.
 

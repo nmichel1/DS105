@@ -1,3 +1,13 @@
+.markdown-here-wrapper{ 
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  margin-right: 1em;
+  margin-left: 1em;
+  font-family: "Helvetica Neue",Helvetica, Arial, Verdana, Sans-serif, !important;
+  text-align:justify;
+}
+
 # DS105
 
 ## US 2020 Elections: An Analysis of US Voting Habits Using Python

@@ -1,4 +1,4 @@
-# DS105 Final Project 
+
 # US 2020 Elections: An Analysis of US Voting Habits Using Python
 
 ## Motivation
